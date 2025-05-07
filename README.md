@@ -1,4 +1,4 @@
-# etch-depth-dmaic-optimization
+# Etch-depth-dmaic-optimization
 Optimized semiconductor etch process using DMAIC, achieving 72% reduction in variability through SPC and statistical testing.
 ## 🎯 Objective
 
