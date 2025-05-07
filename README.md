@@ -1,10 +1,15 @@
-# Etch-depth-dmaic-optimization
-Optimized semiconductor etch process using DMAIC, achieving 72% reduction in variability through SPC and statistical testing.
+# 📊 Etch Depth DMAIC Optimization
+
+Optimized semiconductor etch process using the Six Sigma DMAIC methodology. Achieved a 72% reduction in etch depth variability through SPC, root cause analysis, and statistical testing using JMP Pro.
+
+---
+
 ## 🎯 Objective
 
-- Minimize variability in etch depth across wafers
-- Improve process control and shift the mean toward 930 nm
-- Identify and optimize critical process parameters
+- Reduce etch depth variability across wafer samples
+- Improve yield and shift the mean closer to the target value of 930 nm
+- Identify key process inputs contributing to output variability
+- Implement sustainable process control with SPC
 
 ---
 
@@ -12,14 +17,18 @@ Optimized semiconductor etch process using DMAIC, achieving 72% reduction in var
 
 ### 1. Define
 
-- **Problem**: Excessive etch depth variation causing downstream defects and yield loss
-- **Goal**: Reduce etch variability by ≥ 60% and align output within ±5% spec limits
+The etch process was producing inconsistent wafer depths, leading to non-uniform layer thickness and potential yield loss. A DMAIC project was launched to systematically investigate and resolve this issue.
+
+- **CTQ Metric**: Etch Depth (nm)
+- **Target**: Mean near 930 nm with reduced variability (σ < 5 nm)
+- **Customer Spec Limits**: ±5% of nominal value
 
 ---
 
 ### 2. Measure
 
-Data was collected across 60 wafers, split into **Before** and **After** optimization groups. Each wafer was evaluated for:
+60 wafers were measured — 30 pre-optimization and 30 post-optimization. Process data collected included:
+
 - Etch Depth (nm)
 - RF Power (W)
 - Chamber Pressure (mTorr)
@@ -29,7 +38,7 @@ Data was collected across 60 wafers, split into **Before** and **After** optimiz
 #### 📷 Control Chart – Combined View
 ![Control Chart - Combined](control-chart-combined.png)
 
-This X̄ & R control chart illustrates the overall trend in process stability. The lower half (Range chart) clearly shows a shift at subgroup 7 — after process optimization — where variability drops significantly.
+The X̄ & R control chart shows a clear shift in process variability at subgroup 7, which marks the start of post-optimization data. The average remains within control limits, while the range sharply reduces, indicating improvement.
 
 ---
 
@@ -38,21 +47,20 @@ This X̄ & R control chart illustrates the overall trend in process stability. T
 #### 📷 Control Charts – Before vs. After
 ![Control Chart - Before and After](control-chart-before-after.png)
 
-- **Before Optimization**: Wide range with UCL at ~74, indicating large spread.
-- **After Optimization**: Range drops to ~21, showing a **72% reduction** in process spread.
+The "Before" chart shows high variability with UCL at ~74 and wide dispersion. The "After" chart shows significantly narrower spread and improved stability, indicating process control was achieved.
 
 #### 📷 Distribution Plots
 ![Distributions - Before and After](distribution-before-after.png)
 
-- The “Before” distribution is wider and skewed right.
-- The “After” distribution is tighter with a lower mean — a clear shift toward the target of 930 nm.
+The boxplots and histograms further visualize the improvement. Post-optimization, the distribution is more symmetric and centered, and the standard deviation is considerably lower.
 
 #### 📷 t-Test and Variance Analysis
 ![t-Test and Variance Analysis](t-test-results.png)
 
-- Welch’s t-test shows p < 0.0001, confirming a statistically significant shift in mean.
-- Levene’s and Bartlett’s tests confirm the variance reduction is significant.
-- Standard deviation dropped from **13.56 nm** to **4.50 nm**.
+Statistical validation confirms improvement:
+- **Welch’s t-test**: p < 0.0001 → statistically significant mean reduction
+- **Levene’s test**: p < 0.0001 → significant variance reduction
+- **Standard Deviation** reduced from **13.56 nm** to **4.50 nm**
 
 ---
 
@@ -61,17 +69,26 @@ This X̄ & R control chart illustrates the overall trend in process stability. T
 #### 📷 Multivariate Correlation and Regression
 ![Multivariate Correlation](multivariate-correlation.png)
 
-- **RF Power** has a strong positive correlation with etch depth (r = +0.43).
-- **Chamber Pressure** shows a moderate inverse relationship (r = –0.30).
-- Based on this, RF Power and Chamber Pressure were optimized to operate within tighter, more stable ranges.
+Multivariate analysis identified:
+- **RF Power** positively correlated with Etch Depth (r = +0.43)
+- **Chamber Pressure** negatively correlated (r = –0.30)
+
+These two variables were optimized by tightening control windows, which led to a substantial improvement in output consistency.
+
+Additional actions:
+- Adjusted setpoints for RF Power and Pressure
+- Removed unstable recipes and fine-tuned gas flow settings
+- Conducted trial runs to validate changes
 
 ---
 
 ### 5. Control
 
-- SPC charts were implemented for ongoing weekly review.
-- SOPs were updated, and operators were trained on new parameter ranges.
-- Any two consecutive points outside ±3σ will trigger root cause analysis.
+To sustain gains:
+- Weekly SPC reviews were implemented
+- Operators trained on new parameters
+- Trigger rules set: if 2+ points exceed ±3σ, root cause analysis is launched
+- Standard Operating Procedures (SOPs) were updated
 
 ---
 
@@ -88,18 +105,19 @@ This X̄ & R control chart illustrates the overall trend in process stability. T
 
 ## 🛠 Tools Used
 
-- JMP Pro (Statistical analysis)
-- Control Charts (X̄ & R)
-- Regression & Correlation
-- Welch’s t-Test and Levene’s Test
-- DMAIC Methodology
+- **JMP Pro** – Regression, Correlation, Hypothesis Testing
+- **X̄ & R Control Charts** – Process monitoring
+- **t-Test & Levene’s Test** – Statistical validation
+- **DMAIC** – Structured improvement framework
 
 ---
 
 ## ✅ Outcome
 
-- Reduced etch depth variability by 71%, improving wafer quality and yield.
-- Achieved stable process performance through parameter control.
-- Enabled long-term monitoring with SPC and statistical alerts.
+- Achieved a statistically significant and measurable reduction in process variation.
+- Improved consistency of wafer etch depth, enhancing downstream process quality.
+- Created a robust control plan to ensure sustainable yield improvement.
 
 ---
+
+## 📁 Repository Structure
