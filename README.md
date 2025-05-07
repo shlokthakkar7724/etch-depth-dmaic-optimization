@@ -27,7 +27,7 @@ Data was collected across 60 wafers, split into **Before** and **After** optimiz
 - Etch Time (s)
 
 #### 📷 Control Chart – Combined View
-![Control Chart]("C:\Users\shlok\Desktop\Projects\Improved_Etch_Process_Data__60_Rows_ - Control Chart Builder of Etch Depth (nm).png")
+![Control Chart](Improved_Etch_Process_Data__60_Rows_ - Control Chart Builder of Etch Depth (nm).png)
 
 This X̄ & R control chart illustrates the overall trend in process stability. The lower half (Range chart) clearly shows a shift at subgroup 7 — after process optimization — where variability drops significantly.
 
