@@ -48,7 +48,7 @@ This X̄ & R control chart illustrates the overall trend in process stability. T
 - The “After” distribution is tighter with a lower mean — a clear shift toward the target of 930 nm.
 
 #### 📷 t-Test and Variance Analysis
-![t-Test and Variance Analysis](t-test-variance-analysis.png)
+![t-Test and Variance Analysis](t-test-results.png)
 
 - Welch’s t-test shows p < 0.0001, confirming a statistically significant shift in mean.
 - Levene’s and Bartlett’s tests confirm the variance reduction is significant.
