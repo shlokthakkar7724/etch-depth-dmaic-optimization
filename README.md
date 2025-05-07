@@ -27,7 +27,7 @@ Data was collected across 60 wafers, split into **Before** and **After** optimiz
 - Etch Time (s)
 
 #### 📷 Control Chart – Combined View
-![Control Chart](Improved_Etch_Process_Data__60_Rows_ - Control Chart Builder of Etch Depth (nm).png)
+![Control Chart - Combined](images/control_chart_combined.png)
 
 This X̄ & R control chart illustrates the overall trend in process stability. The lower half (Range chart) clearly shows a shift at subgroup 7 — after process optimization — where variability drops significantly.
 
@@ -36,19 +36,19 @@ This X̄ & R control chart illustrates the overall trend in process stability. T
 ### 3. Analyze
 
 #### 📷 Control Charts – Before vs. After
-![Control Chart - Before and After]("C:\Users\shlok\Desktop\Projects\Improved_Etch_Process_Data__60_Rows_ - Control Chart Builder.png")
+![Control Chart - Before and After](images/control_chart_before_after.png)
 
 - **Before Optimization**: Wide range with UCL at ~74, indicating large spread.
 - **After Optimization**: Range drops to ~21, showing a **72% reduction** in process spread.
 
 #### 📷 Distribution Plots
-![Distributions - Before and After]("C:\Users\shlok\Desktop\Projects\Improved_Etch_Process_Data__60_Rows_ - Distribution.png")
+![Distributions - Before and After](images/distribution_before_after.png)
 
 - The “Before” distribution is wider and skewed right.
 - The “After” distribution is tighter with a lower mean — a clear shift toward the target of 930 nm.
 
 #### 📷 t-Test and Variance Analysis
-![t-Test and Variance Analysis]("C:\Users\shlok\Desktop\Projects\Improved_Etch_Process_Data__60_Rows_ - Fit Y by X of Etch Depth (nm) by Condition.png")
+![t-Test and Variance Analysis](images/t_test_variance_analysis.png)
 
 - Welch’s t-test shows p < 0.0001, confirming a statistically significant shift in mean.
 - Levene’s and Bartlett’s tests confirm the variance reduction is significant.
@@ -59,7 +59,7 @@ This X̄ & R control chart illustrates the overall trend in process stability. T
 ### 4. Improve
 
 #### 📷 Multivariate Correlation and Regression
-![Multivariate Correlation]("C:\Users\shlok\Desktop\Projects\Improved_Etch_Process_Data__60_Rows_ - Multivariate.png")
+![Multivariate Correlation](images/multivariate_correlation.png)
 
 - **RF Power** has a strong positive correlation with etch depth (r = +0.43).
 - **Chamber Pressure** shows a moderate inverse relationship (r = –0.30).
